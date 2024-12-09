@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            background-image: url('360_F_559871209_pbXlOVArUal3mk6Ce60JuP13kmuIRCth.jpeg');
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+        }
+        
+        label {
+            color: aliceblue;
+            background-color: transparent;
+            display: inline;
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        
+        form {
+            width: 100%;
+            max-width: 350px;
+            margin: 0;
+            padding: 15px 30px;
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
+        input {
+            cursor: pointer;
+            background: white;
+            width: 100%;
+            padding: 5px 10px;
+            margin: 0;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .submit {
+            text-decoration: none;
+            background: aqua;
+            padding: 10px;
+            letter-spacing: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            align-items: center;
+        }
+        
+        .submit a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .submit a:hover {
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form action="/signup" method="post">
+            <h2 style="color: aqua; font-size: 40px;">Sign Up</h2>
+
+            <input type="text" id="username" name="username" required placeholder="Username"><br><br>
+
+            <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+
+
+            <input type="tel" id="phone" name="phone" required placeholder="Phone"><br><br>
+
+            <textarea id="address" name="address" rows="4" required placeholder="Address"></textarea><br><br>
+
+
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <div class="submit">
+                <a href="Mainpage.html">Submit</a>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
